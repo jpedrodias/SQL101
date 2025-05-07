@@ -16,8 +16,8 @@ System setup using:
 
 # 1. Clone:
 ```bash
-git clone https://github.com/jpedrodias/FundamentosSQL.git
-cd FundamentosSQL
+git clone https://github.com/jpedrodias/SQL101.git
+cd SQL101
 ```
 
 # 2. Start Docker container

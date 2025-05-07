@@ -22,8 +22,15 @@ cd SQL101
 
 # 2. Start Docker container
 ```bash
+docker compose up
+```
+
+or 
+
+```bash
 docker compose up -d
 ```
+
 
 # 3. Access credentials
 3.1 for the MySQL server  

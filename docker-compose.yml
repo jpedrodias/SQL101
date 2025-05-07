@@ -1,6 +1,7 @@
 # docker-compose file for PostgreSQL, Adminer, and pgAdmin
 
 services:
+  #https://hub.docker.com/_/postgres
   postgres:
     restart: always
     container_name: postgres_container
@@ -23,6 +24,7 @@ services:
       timeout: 5s
       retries: 5
 
+  # https://hub.docker.com/_/mysql
   mysql:
     image: mysql:latest
     container_name: mysql_container
@@ -46,6 +48,7 @@ services:
       timeout: 5s
       retries: 3
 
+  # https://hub.docker.com/_/adminer/
   adminer:
     image: adminer
     container_name: adminer
@@ -59,6 +62,7 @@ services:
     networks:
       - default
   
+  # https://hub.docker.com/r/dpage/pgadmin4/
   pgadmin:
     image: dpage/pgadmin4
     container_name: pgadmin
@@ -78,6 +82,7 @@ services:
     networks:
       - default
 
+  # https://hub.docker.com/r/phpmyadmin/phpmyadmin
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin

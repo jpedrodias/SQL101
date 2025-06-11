@@ -47,9 +47,23 @@ database: mydatabase
 - http://localhost:8082 - pgAdmin (admin@admin.com | admin)  
 - http://localhost:8083 - phpMyAdmin  
 
+
 ## 5. Other tools
 
 - [DBveaver](https://dbeaver.io/download/)
 - [pgAdmin](https://www.pgadmin.org/download/)
 - [sqlite3](https://www.sqlite.org/download.html)
 
+
+## 6. ⚠️ Docker cleanup
+```bash
+docker compose down
+df -h
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi $(docker images -q) -f
+docker volume rm $(docker volume ls -q)
+docker network prune -f
+docker system prune -a --volumes -f
+df -h
+```

@@ -12,7 +12,7 @@ This docker-compose includes two database servers (MySQL and Postgres) and three
 
 # 0. Prerequisite:
 Have Docker installed.
-[Docker Desktop](https://www.docker.com/get-started/)
+- [Docker Desktop](https://www.docker.com/get-started/)
 
 # 1. Clone:
 ```bash
@@ -43,9 +43,9 @@ database: mydatabase
 ```
 
 # 4. Access Adminer, pgAdmin or phpMyAdmin
-http://localhost:8081 - Adminer  
-http://localhost:8082 - pgAdmin (admin@admin.com | admin)  
-http://localhost:8083 - phpMyAdmin  
+- http://localhost:8081 - Adminer  
+- http://localhost:8082 - pgAdmin (admin@admin.com | admin)  
+- http://localhost:8083 - phpMyAdmin  
 
 ## 5. Other tools
 

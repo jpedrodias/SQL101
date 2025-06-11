@@ -22,15 +22,14 @@ Ter o docker instalado.
 
 # 1. Clonar:
 ```bash
-git clone https://github.com/jpedrodias/FundamentosSQL.git
-cd FundamentosSQL
+git clone https://github.com/jpedrodias/SQL101.git
+cd SQL101
 ```
 
 
 # 2. Inicial docker container
 ```bash
-cd system_prep
-docker compose up -d
+docker compose up
 ```
 
 
@@ -54,7 +53,6 @@ base de dados: mydatabase
 
 
 # 4. Aceder ao Adminer, pgAdmin ou phpMyAdmin
-
 http://localhost:8081 - Adminer<br>
 http://localhost:8082 - pgAdmin (admin@admin.com | admin)<br>
 http://localhost:8083 - phpMyAdmin<br>

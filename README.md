@@ -1,66 +1,54 @@
-# Preparação do sistema usando Docker:
-Neste docker-compose existem dois servidores de base de dados (mysql e postgres) e três serviços para aceder via web a esses servidores.
+# System setup using Docker:
+This docker-compose includes two database servers (MySQL and Postgres) and three web services to access these servers.
 
+**Servers** - Database Management Systems (DBMS):
+- **MySQL** - Relational Database Management System (RDBMS)
+- **PostgreSQL** - Advanced Relational Database Management System (ORDBMS)
 
+**Tools** - Database Administration Tools:
+- **Adminer**: Supports multiple DBMSs via a single lightweight PHP interface
+- **pgAdmin**: Official administration tool for PostgreSQL
+- **phpMyAdmin**: Focused on MySQL/MariaDB, with a web interface
 
-**Servers** - Sistemas de Gerenciamento de Banco de Dados (SGBD):
-- **MySQL**	- SGBD Relacional (RDBMS);
-- **PostgreSQL** - SGBD Relacional Avançado (ORDBMS)
-
-
-**Tools** - Ferramentas de Administração de Banco de Dados:
-- **Adminer**: Suporta vários SGBDs via uma única interface PHP leve;
-- **pgAdmin**: Ferramenta oficial de administração para PostgreSQL;
-- **phpMyAdmin**: Focado em MySQL/MariaDB, com uma interface web.
-
-
-
-# 0. Pré-requisito:
-Ter o docker instalado.
+# 0. Prerequisite:
+Have Docker installed.
 [Docker Desktop](https://www.docker.com/get-started/)
 
-
-# 1. Clonar:
+# 1. Clone:
 ```bash
 git clone https://github.com/jpedrodias/SQL101.git
 cd SQL101
 ```
 
-
-# 2. Inicial docker container
+# 2. Start docker container
 ```bash
 docker compose up
 ```
 
-
-# 3. Dados de acesso
-3.1 ao servidor MySQL  
+# 3. Access credentials
+3.1 for MySQL server  
 ```yml
-Servidor: mysql
+Server: mysql
 user: mysql_user
 password: mysql_password
-base de dados: mydatabase
+database: mydatabase
 ```
 
-
-3.2 ao servidor Postgress  
+3.2 for Postgres server  
 ```yml
-Servidor: postgres
+Server: postgres
 user: postgres_user
 password: postgres_password
-base de dados: mydatabase
+database: mydatabase
 ```
 
+# 4. Access Adminer, pgAdmin or phpMyAdmin
+http://localhost:8081 - Adminer  
+http://localhost:8082 - pgAdmin (admin@admin.com | admin)  
+http://localhost:8083 - phpMyAdmin  
 
-# 4. Aceder ao Adminer, pgAdmin ou phpMyAdmin
-http://localhost:8081 - Adminer<br>
-http://localhost:8082 - pgAdmin (admin@admin.com | admin)<br>
-http://localhost:8083 - phpMyAdmin<br>
+## 5. Other tools
 
-
-
-## 5. Outras ferramentas
-
-[DBveaver](https://dbeaver.io/download/)
-[pgAdmin](https://www.pgadmin.org/download/)
+[DBveaver](https://dbeaver.io/download/)  
+[pgAdmin](https://www.pgadmin.org/download/)  
 [sqlite3](https://www.sqlite.org/download.html)

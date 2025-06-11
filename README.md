@@ -49,6 +49,9 @@ http://localhost:8083 - phpMyAdmin
 
 ## 5. Other tools
 
-[DBveaver](https://dbeaver.io/download/)  
-[pgAdmin](https://www.pgadmin.org/download/)  
+[DBveaver](https://dbeaver.io/download/)
+
+[pgAdmin](https://www.pgadmin.org/download/)
+
 [sqlite3](https://www.sqlite.org/download.html)
+
